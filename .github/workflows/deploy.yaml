@@ -23,6 +23,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        env:
+          REACT_APP_WELCOME_TEXT: ${{ vars.REACT_APP_WELCOME_TEXT }}
 
       - name: Build Project
         run: npm run build
